@@ -1,0 +1,14 @@
+<table>
+  <thead>
+    <tr>
+      <th><%=t "email"%></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%@users.each do |user| %> 
+      <tr>
+        <th><%= user.email%></th>
+      </tr>
+    <%end%>
+  </tbody>
+</table>
