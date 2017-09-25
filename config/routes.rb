@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :tasks
+  resources :leaf_tasks
+  resources :composit_tasks
   devise_for :users
   devise_scope :user do
     get 'sign_in', to: 'devise/sessions#new'
